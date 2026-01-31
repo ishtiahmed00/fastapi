@@ -170,3 +170,7 @@ def election_vote(vote : str, nid: Optional[int]=None):
         "You are Voting" : vote,
         "Your NID number " : nid 
     }
+
+@app.get("/institute/{name}")
+def institute(name : str):
+    return{"institute name" : name}
